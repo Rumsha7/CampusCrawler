@@ -2,28 +2,27 @@
 
 from room import *
 
-class Room(object):
+class Schedule(object):
 	"""docstring for Building"""
-	rID = None #string
-	rBuilding = None ##Building
-	rSchedule = []
-	def __init__(self, id, building):
-		self.rID = id
-		self.rBuilding = building
+	sSchedule = {1: [], 2: [], 3: [], 4: [], 5: []} #dictionary
+	sRoom = None ##Building
+	def __init__(self, room):
+		self.sRoom = room
+		for i in range(28):
+			self.sSchedule[1].append("")
+			self.sSchedule[2].append("")
+			self.sSchedule[3].append("")
+			self.sSchedule[4].append("")
+			self.sSchedule[5].append("")
 
-	def addRoom(self, room):
-		self.bRooms.add(room)
-		return True
+	def addTime(self, time):
+		return False
 
-	def removeRoom(self, room):
-		if room in self.bRooms: # room does not exist
-			return False
-		self.bRooms.remove(room)
-		return True
+	def removeTime(self, time):
+		return False
 
-
-	def findRoom(self, room):
-		return room in self.bRooms
+	def checkTime(self, time):
+		return False
 
 	def __str__(self):
-		return self.rID + ", " + str(self.rBuilding)
+		return self.sRoom + ", " + str(self.sSchedule)
