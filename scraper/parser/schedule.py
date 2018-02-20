@@ -25,4 +25,16 @@ class Schedule(object):
 		return False
 
 	def __str__(self):
-		return self.sRoom + ", " + str(self.sSchedule)
+		return str(self.sRoom) + ", " + str(self.sSchedule)
+
+b = Building("HH", "Hamilton Hall")
+rOne = Room("HH 109", b)
+rTwo = Room("HH 107", b)
+s = Schedule(rOne)
+print s
+b.addRoom(rOne)
+b.addRoom(rTwo)
+print(b.findRoom(rOne))
+b.removeRoom(rOne)
+print "Building", b
+print "Room", rOne, rTwo
