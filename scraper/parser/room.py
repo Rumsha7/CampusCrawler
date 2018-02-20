@@ -19,9 +19,8 @@ class Room(object):
 		self.bRooms.remove(room)
 		return True
 
-
 	def findRoom(self, room):
 		return room in self.bRooms
 
 	def __str__(self):
-		return self.rID + ", " + str(self.rBuilding)
+		return self.rID + ", " + (self.rBuilding.bName)

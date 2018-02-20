@@ -1,5 +1,4 @@
 ## schedule data structure
-
 from room import *
 
 class Schedule(object):
@@ -51,11 +50,10 @@ s.addTime(5, 930)
 s.addTime(5, 1030)
 s.addTime(5, 1130)
 print s.removeTime(5, 1130)
-print "\n"
 print s
 b.addRoom(rOne)
 b.addRoom(rTwo)
 print(b.findRoom(rOne))
 b.removeRoom(rOne)
 print "Building", b
-print "Room", rOne, rTwo
+print "Room:	", rOne, rTwo
