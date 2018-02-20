@@ -1,6 +1,7 @@
 ## schedule data structure
 
-from building import *
+from room import *
+
 class Room(object):
 	"""docstring for Building"""
 	rID = None #string
