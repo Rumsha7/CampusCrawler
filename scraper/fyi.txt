@@ -18,7 +18,7 @@ Organization
 	Building {
 		String id //short form name
 		String name
-		ArrayList[Room]
+		Set[Room]
 
 	}
 	Room {
