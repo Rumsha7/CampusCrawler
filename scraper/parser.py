@@ -1,0 +1,1 @@
+## Parses data from schedule into data structures
