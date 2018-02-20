@@ -1,1 +1,41 @@
 Developed by: Rumsha Siddiqui, Jenny Feng, Umme Salma Gadriwala
+
+Web Scraping To Do:
+
+Webpage Manipulation
+-in a loop:
+	-enter course subject
+	-then iterate through numbers 1-3 for the "contains" field
+	-do this for every course subject
+
+-change semester
+
+Scraping
+-need course name, TIME/DATE, and LOCATION
+
+Organization
+-create data structure
+	Building {
+		String id //short form name
+		String name
+		ArrayList[Room]
+
+	}
+	Room {
+		String room_id //= building_id + " " + room number
+		String building_id
+		List[Schedule] //one for each day of the week
+	}
+	Schedule {
+		String day
+		String room_id
+		List[course_name] //course_name is just string and list[0] rep. 8:30am, list[1] rep. 9:00am, list[28] = 10:00pm
+						  //if list[#] has no course, then list[#] = ""
+	}
+
+
+-Learn mechanize
+-Once mechanize gives you form, implement scraper 
+
+-So mechanize is for filling and submitting the form
+-then use different module (BeautifulSoul?) to extract data from webpage
