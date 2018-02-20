@@ -19,19 +19,8 @@ class Room(object):
 		self.bRooms.remove(room)
 		return True
 
-
 	def findRoom(self, room):
 		return room in self.bRooms
 
 	def __str__(self):
-		return self.rID + ", " + str(self.rBuilding)
-
-b = Building("HH", "Hamilton Hall")
-rOne = Room("HH 109", b)
-rTwo = Room("HH 107", b)
-b.addRoom(rOne)
-b.addRoom(rTwo)
-print(b.findRoom(rOne))
-b.removeRoom(rOne)
-print "Building", b
-print "Room", rOne, rTwo
+		return self.rID + ", " + (self.rBuilding.bName)

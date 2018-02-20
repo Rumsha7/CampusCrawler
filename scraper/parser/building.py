@@ -32,7 +32,10 @@ class Building(object):
 		return room in self.bRooms
 
 	def __str__(self):
-		return self.bID + ", " + self.bName + "\n Rooms: " + str(self.bRooms)
+		rooms = ""
+		for r in self.bRooms:
+			rooms += str(r) + ", "
+		return self.bID + ", " + self.bName + "\n Rooms: " + rooms[:-2]
 
 #b = Building("HH", "Hamilton Hall")
 #b.addRoom("HH 109")
