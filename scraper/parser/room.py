@@ -25,13 +25,3 @@ class Room(object):
 
 	def __str__(self):
 		return self.rID + ", " + str(self.rBuilding)
-
-b = Building("HH", "Hamilton Hall")
-rOne = Room("HH 109", b)
-rTwo = Room("HH 107", b)
-b.addRoom(rOne)
-b.addRoom(rTwo)
-print(b.findRoom(rOne))
-b.removeRoom(rOne)
-print "Building", b
-print "Room", rOne, rTwo
