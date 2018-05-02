@@ -39,3 +39,6 @@ Organization
 
 -So mechanize is for filling and submitting the form
 -then use different module (BeautifulSoul?) to extract data from webpage
+
+Parser:
+Dictionary: key - room, value - array of times
