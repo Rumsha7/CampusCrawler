@@ -34,6 +34,12 @@ Organization
 	}
 
 
+
+New Notes for getting data:
+-Can get it from timetablegenerator's website manually 
+	-Inspect using developer's console in web browser
+	
+Old Notes for getting data:
 -Learn mechanize
 -Once mechanize gives you form, implement scraper 
 
