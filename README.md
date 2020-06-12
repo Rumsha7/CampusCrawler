@@ -1,2 +1,2 @@
 # CampusCrawler
-A web app that helps users locate empty rooms on campus!
+A web application that helps users locate empty rooms on campus!
